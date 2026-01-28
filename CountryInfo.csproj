@@ -120,7 +120,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="Files\cities.xml" />
+    <Content Include="Files\cities_Africa_Pacific.xml" />
+    <Content Include="Files\Cities_Americas.xml" />
+    <Content Include="Files\cities_Asia.xml" />
+    <Content Include="Files\cities_Europe.xml" />
     <Content Include="Files\countries.xml" />
     <Content Include="Files\regions.xml" />
     <Content Include="Global.asax" />

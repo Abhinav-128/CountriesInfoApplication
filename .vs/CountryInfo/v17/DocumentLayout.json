@@ -3,12 +3,39 @@
   "WorkspaceRootPath": "C:\\Console projects\\WeatherReport\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|c:\\console projects\\weatherreport\\countriesform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:countriesform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|c:\\console projects\\weatherreport\\files\\countries.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:files\\countries.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|C:\\Console projects\\WeatherReport\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|c:\\console projects\\weatherreport\\countriesform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:countriesform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|c:\\console projects\\weatherreport\\files\\regions.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:files\\regions.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|C:\\Console projects\\WeatherReport\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|C:\\Console projects\\WeatherReport\\countriesform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:countriesform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|C:\\Console projects\\WeatherReport\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Publish\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|C:\\Console projects\\WeatherReport\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9A7C17A5-9A36-4F11-800F-D938510F9691}|CountryInfo.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +50,115 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CountriesForm.aspx",
-              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\CountriesForm.aspx",
-              "RelativeDocumentMoniker": "CountriesForm.aspx",
-              "ToolTip": "C:\\Console projects\\WeatherReport\\CountriesForm.aspx",
-              "RelativeToolTip": "CountriesForm.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-01-20T18:47:47.862Z",
+              "Title": "countries.xml",
+              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\Files\\countries.xml",
+              "RelativeDocumentMoniker": "Files\\countries.xml",
+              "ToolTip": "C:\\Console projects\\WeatherReport\\Files\\countries.xml",
+              "RelativeToolTip": "Files\\countries.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-01-28T20:06:51.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "regions.xml",
+              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\Files\\regions.xml",
+              "RelativeDocumentMoniker": "Files\\regions.xml",
+              "ToolTip": "C:\\Console projects\\WeatherReport\\Files\\regions.xml",
+              "RelativeToolTip": "Files\\regions.xml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-01-28T19:59:30.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CountriesForm.aspx.cs",
               "DocumentMoniker": "C:\\Console projects\\WeatherReport\\CountriesForm.aspx.cs",
               "RelativeDocumentMoniker": "CountriesForm.aspx.cs",
               "ToolTip": "C:\\Console projects\\WeatherReport\\CountriesForm.aspx.cs",
               "RelativeToolTip": "CountriesForm.aspx.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwLUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwGsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T18:49:15.42Z",
+              "WhenOpened": "2026-01-25T12:50:20.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Global.asax.cs",
+              "ToolTip": "C:\\Console projects\\WeatherReport\\Global.asax.cs",
+              "RelativeToolTip": "Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T11:17:49.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "About.aspx",
+              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\About.aspx",
+              "RelativeDocumentMoniker": "About.aspx",
+              "ToolTip": "C:\\Console projects\\WeatherReport\\About.aspx",
+              "RelativeToolTip": "About.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-24T11:17:42.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Console projects\\WeatherReport\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-23T03:13:39.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\Default.aspx",
+              "RelativeDocumentMoniker": "Default.aspx",
+              "ToolTip": "C:\\Console projects\\WeatherReport\\Default.aspx",
+              "RelativeToolTip": "Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-22T19:16:29.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Publish\\Web.config",
+              "RelativeDocumentMoniker": "..\\..\\Publish\\Web.config",
+              "ToolTip": "C:\\Publish\\Web.config",
+              "RelativeToolTip": "..\\..\\Publish\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-22T19:13:21.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CountriesForm.aspx",
+              "DocumentMoniker": "C:\\Console projects\\WeatherReport\\CountriesForm.aspx",
+              "RelativeDocumentMoniker": "CountriesForm.aspx",
+              "ToolTip": "C:\\Console projects\\WeatherReport\\CountriesForm.aspx",
+              "RelativeToolTip": "CountriesForm.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-20T18:47:47.862Z",
               "EditorCaption": ""
             }
           ]

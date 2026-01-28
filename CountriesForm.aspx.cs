@@ -10,6 +10,11 @@ namespace CountryInfo
 {
     public partial class Countries : System.Web.UI.Page
     {
+        public DataSet dsEurope;
+        public DataSet dsAmerica;
+        public DataSet dsAsia;
+        public DataSet dsAfrica;
+        public DataSet dsCities;
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
@@ -19,7 +24,6 @@ namespace CountryInfo
                 {
                     ListingDropdown(Continents, dsContinents);
                 }
-                
                 ListItem liContinents = new ListItem("Select Continent", "-1");
                 Continents.Items.Insert(0, liContinents);
 
@@ -39,6 +43,13 @@ namespace CountryInfo
                 CityInfo.Visible = false;
                 lblCityInfo.Visible = false;
             }
+
+        }
+        
+        protected DataSet LocatingDataSet(DataSet set,string file)
+        {
+            set = ReadDataSet(file);
+            return set;
         }
         protected DataSet ReadDataSet(string xmlFile)
         {
@@ -83,12 +94,18 @@ namespace CountryInfo
         {
             CityInfo.Visible = true;
             lblCityInfo.Visible = true;
-            DataSet dsCities = Session["cities"] as DataSet;
+
+
+            if (dsCities == null)
+            {
+                dsCities = dtCities(GetRegionId(Countries1.SelectedValue));
+            }
             DataTable dt = dsCities.Tables["city"];
             DataView dv = dt.DefaultView;
             dv.RowFilter = $"id = {DropDownList3.SelectedValue}";
             CityInfo.DataSource = dv;
             CityInfo.DataBind();
+            DropDownList3.SelectedIndex = 0;
         }
 
         protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
@@ -153,18 +170,17 @@ namespace CountryInfo
             else
             {
                 MoreInfo.Enabled = true;
-                Response.Write("Reading cities.xml");
+                Response.Write("Reading cities.xml <br/>");
                 DropDownList3.Enabled = true;
                 SearchCity.Enabled = true;
                 SearchCity.Visible = true;
 
-                if (Session["cities"]==null)
+                if (dsCities == null)
                 {
-                    Session["cities"] = ReadDataSet("cities.xml");
+                    dsCities = dtCities(GetRegionId(Countries1.SelectedValue));
                 }
-
-                DataSet dsCities = Session["cities"] as DataSet;
-                if(dsCities!=null)
+                 
+                if (dsCities!=null)
                 {
                     ListingDropdown(DropDownList3, dsCities, "city", $"country_id = '{Countries1.SelectedValue}'");
                 }
@@ -199,7 +215,19 @@ namespace CountryInfo
             DetailsView1.DataSource = dv;
             DetailsView1.DataBind();
         }
-
+        protected string GetRegionId(string countryId)
+        {
+            DataSet dsCountries = ReadDataSet("countries.xml");
+            DataTable dt = dsCountries.Tables["country"];
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (dr["id"].ToString() == countryId)
+                {
+                    return dr["region_id"].ToString();
+                }
+            }
+            return null;
+        }
         protected void SearchCity_TextChanged(object sender, EventArgs e)
         {
             Run.Visible = true;
@@ -210,12 +238,39 @@ namespace CountryInfo
                 if(item.Text.Trim().ToLower().Contains(SearchCity.Text.Trim().ToLower()))
                 {
                     item.Selected = true;
+                    SearchCity.Text = string.Empty;
                     break;
-                    
                 }
             }
         }
-
+        protected DataSet dtCities(string regionId)
+        {
+            if (regionId == "1" || regionId == "5" || regionId == "6")
+            {
+                if (dsAfrica == null)
+                    dsAfrica = ReadDataSet("cities_Africa_Pacific.xml");
+                return dsAfrica;
+            }
+            else if (regionId == "2")
+            {
+                if (dsAmerica == null)
+                    dsAmerica = ReadDataSet("cities_Americas.xml");
+                return dsAmerica;
+            }
+            else if (regionId == "3")
+            {
+                if (dsAsia == null)
+                    dsAsia = ReadDataSet("cities_Asia.xml");
+                return dsAsia;
+            }
+            else if(regionId == "4")
+            {
+                if (dsEurope == null)
+                    dsEurope = ReadDataSet("cities_Europe.xml");
+                return dsEurope;
+            }
+            return null;
+        }
         protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
         {
 
